@@ -44,11 +44,20 @@ function ataque(){
 	var pelea1 = new Pokemon(pokemon1,"verde",20,100);
 	var pelea2 = new Pokemon(pokemon2,"azul",30,220);
 
-	pelea1.atacar(pelea2);
+	if (pelea1.nombre == pelea2.nombre){
+		
+		alert("No puedes atacar al mismo Pokemón!");
 
-var ring = document.getElementsByClassName("styled-select");
+	} else{
 
-alert(pelea1.nombre + "Atacó a " + pelea2.nombre + "y su nivel de vida quedó en : " + pelea2.vida); 
+		pelea1.atacar(pelea2);
+
+		var ring = document.getElementById("contenedorboton");
+
+		var resultado = "<strong>" + pelea1.nombre + " atacó a " + pelea2.nombre + " y  "+ pelea2.nombre + " tiene " + pelea2.vida + " de vida restante." + "<br>"; 
+
+		ring.innerHTML=resultado;
+	}
 
 
 }
