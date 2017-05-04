@@ -1,8 +1,44 @@
+html, body {
+    height: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    display: table-cell;
+    
+}
+
 .styled-select select {
    width: 240px;
    height: 34px;
    overflow: hidden;
-   background: url(new_arrow.png) 
-   no-repeat right #ddd;
    border: 1px solid #ccc;
  }
+
+
+ body{
+ 	background-color: #e5e2e2;
+ 	align-content: center;
+ }
+
+ button {
+ border: none;
+ background: #3a7999;
+ color: #f2f2f2;
+ padding: 10px;
+ font-size: 15px;
+ border-radius: 5px;
+ position: relative;
+ box-sizing: border-box;
+ transition: all 500ms ease;
+ align-self: center;
+}
+
+button:hover{
+	color: #FFF;
+  	background: #afb1bd;
+}
