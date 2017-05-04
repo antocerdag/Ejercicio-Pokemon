@@ -24,9 +24,15 @@ var  Charmander = new Pokemon("Charmander","rojo",220,20);
 var Squirtle = new Pokemon("Squirtle","azul",145,50);
 var Bulbasaur = new Pokemon("Bulbasaur","verde",115,30);
 
-function ataque(pokemon1,pokemon2){
- pokemon1.atacar(pokemon2); 
+var pokemon1 = document.getElementById('pokemon1');
+var pokemon2 = document.getElementById('pokemon2');
+
+var poke1 = pokemon1.options[pokemon1.selectedIndex].class;
+var poke2 = pokemon2.options[pokemon2.selectedIndex].class;
+
+function ataque(poke1,poke2){
+ 
 }
 
 Pikachu.atacar(Charmander);
-console.log(Charmander.vida);
+console.log("Nivel de vida " + Charmander.vida);
