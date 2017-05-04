@@ -21,6 +21,12 @@ function Pokemon(nombre,color,vida,poderDeAtaque,nivelDeAmistad){
 }
 var Pikachu = new Pokemon("Pikachu","amarillo",120,100);
 var  Charmander = new Pokemon("Charmander","rojo",220,20);
+var Squirtle = new Pokemon("Squirtle","azul",145,50);
+var Bulbasaur = new Pokemon("Bulbasaur","verde",115,30);
+
+function ataque(pokemon1,pokemon2){
+ pokemon1.atacar(pokemon2); 
+}
 
 Pikachu.atacar(Charmander);
 console.log(Charmander.vida);
